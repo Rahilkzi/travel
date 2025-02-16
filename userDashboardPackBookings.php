@@ -56,6 +56,18 @@ if (!isset($_SESSION["username"])) {
                     <span class="fa fa-copy"></span> My Packages
                 </div>
 
+        			<a href="userDashboardETickets.php">
+				<div class="col-sm-12 menuContainer bottomBorder">
+					<span class="fa fa-clone"></span> My Train-Tickets
+				</div>
+				</a>
+				
+				<a href="userDashboardCancelTicket.php">
+				<div class="col-sm-12 menuContainer bottomBorder">
+					<span class="fa fa-close"></span> Cancel Ticket
+				</div>
+				</a>
+
           
 
                 <a href="userDashboardAccountSettings.php">
@@ -101,7 +113,7 @@ if (!isset($_SESSION["username"])) {
                                             <td class="tableElementTagsNoHover text-center"><?php echo $packageBooksRow["packageName"]; ?></td>
                                             <td class="tableElementTagsNoHover text-center"><?php echo $packageBooksRow["date"]; ?></td>
                                             <td class="text-center">
-                                                <a href="receipts/package_receipt<?php echo $packageBooksRow["bookingID"]; ?>.html" target="_blank">
+                                                <a href="receipts/package_receipt_<?php echo $packageBooksRow["bookingID"]; ?>.html" target="_blank">
                                                     <span class="fa fa-download tableElementTags pullSpan"></span>
                                                 </a>
                                             </td>

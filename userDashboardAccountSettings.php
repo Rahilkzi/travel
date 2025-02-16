@@ -90,10 +90,23 @@ if(!isset($_SESSION["username"]))
 				</div>
 				</a>
 
+
 						
 				<a href="userDashboardPackBookings.php">
 				<div class="col-sm-12 menuContainer bottomBorder">
 					<span class="fa fa-copy"></span> My Packages
+				</div>
+				</a>
+
+							<a href="userDashboardETickets.php">
+				<div class="col-sm-12 menuContainer bottomBorder">
+					<span class="fa fa-clone"></span> My Train-Tickets
+				</div>
+				</a>
+				
+				<a href="userDashboardCancelTicket.php">	
+				<div class="col-sm-12 menuContainer bottomBorder">
+					<span class="fa fa-close"></span> Cancel Ticket
 				</div>
 				</a>
 				
